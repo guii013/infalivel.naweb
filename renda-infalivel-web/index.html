@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renda Infalível na Web</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .promocao-section {
+            background: #F2F2F2;
+            padding: 2.5rem 0;
+            margin: 2rem auto;
+            border-radius: 12px;
+            max-width: 900px;
+            box-shadow: 0 4px 16px rgba(28,45,74,0.08);
+            text-align: center;
+        }
+
+        .promocao-section h2 {
+            color: #1C2D4A;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .livros-lista {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .livro-card {
+            background: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(28,45,74,0.10);
+            padding: 1.5rem 1.2rem;
+            width: 260px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .livro-card h3 {
+            color: #1C2D4A;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .livro-card p {
+            color: #1A1A1A;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .precos {
+            margin-bottom: 1rem;
+        }
+
+        .preco-exclusivo {
+            color: #A5FF00;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: block;
+        }
+
+        .preco-parcelado {
+            color: #1C2D4A;
+            font-size: 0.95rem;
+            display: block;
+        }
+
+        .btn-comprar-livro {
+            background: linear-gradient(90deg, #A5FF00 70%, #1C2D4A 100%);
+            color: #1C2D4A;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(28,45,74,0.10);
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+            margin-top: 0.5rem;
+        }
+
+        .btn-comprar-livro:hover, .btn-comprar-livro:focus {
+            background: #A5FF00;
+            color: #1C2D4A;
+            transform: scale(1.05);
+        }
+
+        .oferta-limitada-section {
+            background: #1C2D4A;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 2rem 0 2.5rem 0;
+            border-radius: 12px;
+            margin: 2rem auto;
+            max-width: 900px;
+            box-shadow: 0 4px 16px rgba(28,45,74,0.12);
+        }
+
+        .oferta-container h2 {
+            color: #A5FF00;
+            font-size: 1.7rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .cronometro {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #A5FF00;
+            margin-top: 1rem;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Renda Infalível na Web</h1>
+        <p>Descubra como transformar sua vida financeira com nosso ebook.</p>
+    </header>
+    
+    <section id="nossa-historia" class="historia-section">
+        <div class="container">
+            <h2>Nossa História</h2>
+            <div class="historia-content">
+                <p>A Infalível na Web é uma agência de marketing digital especializada em estratégias de renda extra online. Oferecemos conteúdos, eBooks, cursos e ferramentas para quem deseja transformar seu tempo em dinheiro com métodos testados e práticos. Acreditamos em resultados reais com motivação, foco e execução.</p>
+            </div>
+        </div>
+    </section>
+
+    <nav>
+        <ul class="pagination">
+            <li><a href="#parte1">Parte 1 – Mente Milionária</a></li>
+            <li><a href="#parte2">Parte 2 – 10+ Ideias de Renda Extra Testadas e Validadas</a></li>
+            <li><a href="#parte3">Parte 3 – Passo a Passo para Começar</a></li>
+            <li><a href="#parte4">Parte 4 – Fundamentos de Venda e Negócio</a></li>
+            <li><a href="#parte5">Parte 5 – Investindo o Lucro</a></li>
+            <li><a href="#parte6">Parte 6 – Ferramentas e Modelos Prontos</a></li>
+            <li><a href="#bonus">Bônus</a></li>
+        </ul>
+    </nav>
+
+    <section class="lead-form-section">
+        <h3>Receba dicas exclusivas e novidades!</h3>
+        <form class="lead-form" id="leadForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Seu melhor e-mail">
+
+            <button type="submit">Quero Receber!</button>
+        </form>
+        <div id="leadMsg" style="margin-top:1rem;font-size:1rem;"></div>
+    </section>
+
+    <main>
+        <section id="parte1">
+            <h2>Parte 1 – Mente Milionária</h2>
+            <p>Conteúdo da Parte 1...</p>
+        </section>
+        
+        <section id="parte2">
+            <h2>Parte 2 – 10+ Ideias de Renda Extra Testadas e Validadas</h2>
+            <p>Conteúdo da Parte 2...</p>
+        </section>
+        
+        <section id="parte3">
+            <h2>Parte 3 – Passo a Passo para Começar</h2>
+            <p>Conteúdo da Parte 3...</p>
+        </section>
+        
+        <section id="parte4">
+            <h2>Parte 4 – Fundamentos de Venda e Negócio</h2>
+            <p>Conteúdo da Parte 4...</p>
+        </section>
+        
+        <section id="parte5">
+            <h2>Parte 5 – Investindo o Lucro</h2>
+            <p>Conteúdo da Parte 5...</p>
+        </section>
+        
+        <section id="parte6">
+            <h2>Parte 6 – Ferramentas e Modelos Prontos</h2>
+            <p>Conteúdo da Parte 6...</p>
+        </section>
+        
+        <section id="bonus">
+            <h2>Bônus</h2>
+            <p>Conteúdo do Bônus...</p>
+        </section>
+
+        <section class="compra-section">
+            <div class="compra-container">
+                <h2>Garanta já seu e-book!</h2>
+                <p class="compra-desc">
+                    Transforme sua vida financeira com o <strong>Renda Infalível na Web</strong>. Conteúdo exclusivo, prático e direto ao ponto para você começar a lucrar online hoje mesmo!
+                </p>
+                <div class="compra-preco">
+                    <span class="preco-antigo">De <s>R$ 97,00</s></span>
+                    <span class="preco-novo">Por apenas <strong>R$ 29,90</strong></span>
+                </div>
+                <button id="btnComprar" class="btn-comprar">Quero meu e-book agora!</button>
+                <p class="compra-garantia">Garantia de 7 dias ou seu dinheiro de volta!</p>
+                <div id="compraMsg" class="compra-msg"></div>
+            </div>
+        </section>
+
+        <section class="promocao-section">
+            <div class="promocao-container">
+                <h2>Promoção Exclusiva de Livros Digitais</h2>
+                <div class="livros-lista">
+                    <div class="livro-card">
+                        <h3>Renda Infalível na Web</h3>
+                        <p>Aprenda a gerar renda extra com métodos testados.</p>
+                        <div class="precos">
+                            <span class="preco-exclusivo">R$ 29,90 à vista</span>
+                            <span class="preco-parcelado">ou 3x de R$ 11,00</span>
+                        </div>
+                        <button class="btn-comprar-livro">Comprar agora</button>
+                    </div>
+                    <div class="livro-card">
+                        <h3>Negócio Digital do Zero</h3>
+                        <p>Guia prático para iniciar seu negócio online.</p>
+                        <div class="precos">
+                            <span class="preco-exclusivo">R$ 39,90 à vista</span>
+                            <span class="preco-parcelado">ou 4x de R$ 10,50</span>
+                        </div>
+                        <button class="btn-comprar-livro">Comprar agora</button>
+                    </div>
+                    <div class="livro-card">
+                        <h3>Investindo com Segurança</h3>
+                        <p>Estratégias para multiplicar seu lucro na internet.</p>
+                        <div class="precos">
+                            <span class="preco-exclusivo">R$ 24,90 à vista</span>
+                            <span class="preco-parcelado">ou 2x de R$ 13,00</span>
+                        </div>
+                        <button class="btn-comprar-livro">Comprar agora</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="oferta-limitada-section">
+            <div class="oferta-container">
+                <h2>Oferta por Tempo Limitado!</h2>
+                <p>Esta promoção especial termina em:</p>
+                <div id="cronometro" class="cronometro">15:00</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Renda Infalível na Web. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/timer.js"></script>
+</body>
+</html>
